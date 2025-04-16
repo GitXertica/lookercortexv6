@@ -86,13 +86,13 @@
     show_comparison: false
     listen:
       Hierarchy: profit_and_loss_navigation_ext.filter1
-      Display Timeframe: profit_and_loss_navigation_ext.filter2
+      #Display Timeframe: profit_and_loss_navigation_ext.filter2
       Select Fiscal Timeframe: profit_and_loss_navigation_ext.filter3
       Global Currency: profit_and_loss_navigation_ext.filter4
       Company Code: profit_and_loss_navigation_ext.filter5
       Ledger Name: profit_and_loss_navigation_ext.filter6
-      Top Hierarchy Level: profit_and_loss_navigation_ext.filter7
-      Combine Selected Timeframes?: profit_and_loss_navigation_ext.filter8
+      #Top Hierarchy Level: profit_and_loss_navigation_ext.filter7
+      #Combine Selected Timeframes?: profit_and_loss_navigation_ext.filter8
     row: 11
     col: 0
     width: 24

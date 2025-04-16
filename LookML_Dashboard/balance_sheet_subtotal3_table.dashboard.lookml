@@ -83,13 +83,13 @@
     show_single_value_title: false
     show_comparison: false
     listen:
-      Fiscal Period: balance_sheet_navigation_ext.filter1
+      #Fiscal Period: balance_sheet_navigation_ext.filter1
       Global Currency: balance_sheet_navigation_ext.filter2
       Hierarchy: balance_sheet_navigation_ext.filter3
       Chart of Accounts: balance_sheet_navigation_ext.filter4
       Company Code: balance_sheet_navigation_ext.filter5
       Ledger Name: balance_sheet_navigation_ext.filter6
-      Top Hierarchy Level: balance_sheet_navigation_ext.filter7
+      #Top Hierarchy Level: balance_sheet_navigation_ext.filter7
     row: 11
     col: 0
     width: 24

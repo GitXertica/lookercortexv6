@@ -97,7 +97,7 @@ view: balance_sheet_navigation_ext {
 
   parameter: navigation_focus_page {
     hidden: no
-    type: unquoted
+    type: unquoted #quote
     group_label: "Navigation"
     allowed_value: {value:"1"}
     allowed_value: {value:"2"}

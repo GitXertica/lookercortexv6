@@ -198,7 +198,7 @@ view: +balance_sheet {
     label: "Total Amount (Local Currency)"
     description: "Period Amount in Local Currency"
     sql: ${amount_in_local_currency} ;;
-    value_format_name: millions_d1
+    #value_format_name: millions_d1
   }
 
   measure: total_cumulative_amount_in_local_currency {
@@ -206,7 +206,7 @@ view: +balance_sheet {
     label: "Total Cumulative Amount (Local Currency)"
     description: "End of Period Cumulative Amount in Local Currency"
     sql: ${cumulative_amount_in_local_currency} ;;
-    value_format_name: millions_d1
+    #value_format_name: millions_d1
   }
 
   measure: total_amount_in_global_currency {
@@ -214,7 +214,7 @@ view: +balance_sheet {
     label: "Total Amount (Global Currency)"
     description: "Period Amount in Target or Global Currency"
     sql: ${amount_in_target_currency} ;;
-    value_format_name: millions_d1
+    #value_format_name: millions_d1
   }
 
   measure: total_cumulative_amount_in_global_currency {
@@ -222,7 +222,7 @@ view: +balance_sheet {
     label: "Total Cumulative Amount (Global Currency)"
     description: "End of Period Cumulative Amount in Target or Global Currency"
     sql: ${cumulative_amount_in_target_currency} ;;
-    value_format_name: millions_d1
+    #value_format_name: millions_d1
   }
 
   measure: current_assets {

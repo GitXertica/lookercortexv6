@@ -319,7 +319,7 @@ view: +profit_and_loss {
     label: "Total Net Income (Global Currency)"
     sql: ${amount_in_target_currency} ;;
     filters: [gllevel_number: "2"]
-    value_format_name: millions_d1
+    #value_format_name: millions_d1
   }
 
   measure: list_companies {

@@ -144,7 +144,7 @@ view: balance_sheet_fiscal_periods_selected_sdt {
     description: "Cumulative Amount in Global Currency for the selected Fiscal Reporting Period"
     sql: ${balance_sheet.cumulative_amount_in_target_currency} ;;
     filters: [fiscal_period_group: "Reporting"]
-    value_format_name: millions_d1
+    #value_format_name: millions_d1
     html: @{negative_format} ;;
   }
 
@@ -172,7 +172,7 @@ view: balance_sheet_fiscal_periods_selected_sdt {
     description: "Cumulative Amount in Global Currency for the selected Fiscal Comparison Period"
     sql: ${balance_sheet.cumulative_amount_in_target_currency} ;;
     filters: [fiscal_period_group: "Comparison"]
-    value_format_name: millions_d1
+    #value_format_name: millions_d1
     html: {% if balance_sheet.select_fiscal_period._in_query and balance_sheet.select_comparison_type._parameter_value == 'none' %}
           {% else %}@{negative_format}
           {% endif %};;
@@ -185,7 +185,7 @@ view: balance_sheet_fiscal_periods_selected_sdt {
     label: "Variance Amount"
     description: "Reporting Period Amount minus Comparison Period Amount"
     sql: ${reporting_period_amount_in_global_currency} - ${comparison_period_amount_in_global_currency} ;;
-    value_format_name: millions_d1
+    #value_format_name: millions_d1
     html: @{negative_format} ;;
   }
 
@@ -197,7 +197,7 @@ view: balance_sheet_fiscal_periods_selected_sdt {
     description: "Percentage Change between Reporting and Comparison Periods"
     # note ABS in denominator because both numerator and denominator can both be negative. ABS allows further Decline between 2 negative numbers to show as negative
     sql: SAFE_DIVIDE( (${reporting_period_amount_in_global_currency} - ${comparison_period_amount_in_global_currency}),ABS(${comparison_period_amount_in_global_currency})) ;;
-    value_format_name: percent_1
+    #value_format_name: percent_1
     html: @{negative_format} ;;
   }
 
